@@ -19,6 +19,7 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
             .antMatchers("/").hasRole("padrao")
+            .antMatchers("/funcionario/list").hasRole("padrao")
             .and()
 
             .formLogin()
