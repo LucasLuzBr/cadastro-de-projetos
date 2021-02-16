@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>View Funcionario</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Cpf</th>
+            <th>Cargo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="funcionario : ${funcionarios}">
+            <td th:text="${funcionario.id_funcionario}"></td>
+            <td th:text="${funcionario.nome}"></td>
+            <td th:text="${funcionario.sobrenome}"></td>
+            <td th:text="${funcionario.cpf}"></td>
+            <td th:text="${funcionario.cargo.nome}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
