@@ -1,4 +1,5 @@
-.div-container-login {
+/* Login */
+.div-form-login {
     height: 330px;
     width: 400px;
     background-color: rgb(255, 255, 255);
@@ -7,23 +8,34 @@
     box-shadow: 5px 5px 20px rgb(196, 196, 196);
 }
 
-.titulo {
+.div-h1-login {
     padding-top: 1px;
     text-align: center;
     font-size: 15pt;
     font-family: monospace;
 }
 
-.div-form {
+.div-input-login {
     text-align: center;
 }
 
-.div-botao {
+.input-login {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    height: 35px;
+    width: 300px;
+    outline: 0;
+    font-family: monospace;
+    margin: 15px;
+    text-align: center;
+}
+
+.div-button-login {
     text-align: center;
     margin-top: 15px;
 }
 
-.button {
+.button-login {
     background-color: #60c79c;
     box-shadow: 0 6px 5px rgb(207, 207, 207);
     height: 35px;
@@ -34,18 +46,32 @@
     display: inline-block;
     font-family: monospace;
 }
-.button:hover {background-color: #60c79c}
+.button-login:hover {background-color: #60c79c}
 
-.button:active {
+.button-login:active {
   background-color: #60c79c;
   box-shadow: 0 1px 1px rgb(207, 207, 207);
   transform: translateY(4px);
 }
 
-.input {
- /* background-color: rgb(231, 231, 231);
-    border: 1px solid #ccc;;
-    border-radius: 6px; */
+/* funcionario add */
+
+.div-h1-add-funcionario {
+    padding-top: 1px;
+    text-align: center;
+    font-size: 15pt;
+    font-family: monospace;
+}
+
+.div-input-add-funcionario {
+    text-align: center;
+}
+
+.div-select-add-funcionario {
+    text-align: center;
+}
+
+.input-add-funcionario {
     border: none;
     border-bottom: 1px solid rgb(179, 179, 179);
     height: 35px;
@@ -55,19 +81,45 @@
     margin: 15px;
     text-align: center;
 }
-/* tabela funcionario */
-table {
+
+.div-button-add-funcionario {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button-add-funcionario {
+    background-color: #60c79c;
+    box-shadow: 0 6px 5px rgb(207, 207, 207);
+    height: 35px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    display: inline-block;
+    font-family: monospace;
+}
+.button-add-funcionario:hover {background-color: #60c79c}
+
+.button-add-funcionario:active {
+  background-color: #60c79c;
+  box-shadow: 0 1px 1px rgb(207, 207, 207);
+  transform: translateY(4px);
+}
+
+/* funcionario list */
+
+.table-list-funcionario {
 font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
 }
 
-td, th {
+.td-list-funcionario, .th-list-funcionario {
 border: 1px solid #dddddd;
 text-align: left;
 padding: 8px;
 }
 
-tr:nth-child(even) {
+.tr-list-funcionario:nth-child(even) {
 background-color: #dddddd;
 }
