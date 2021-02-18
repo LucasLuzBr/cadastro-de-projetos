@@ -8,25 +8,25 @@
     <title>View Funcionario</title>
 </head>
 <body>
-<table>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Sobrenome</th>
-            <th>Cpf</th>
-            <th>Cargo</th>
+    <table class="table-list-funcionario">
+        <thead>
+        <tr class="tr-list-funcionario">
+            <th class="th-list-funcionario">Id</th>
+            <th class="th-list-funcionario">Nome</th>
+            <th class="th-list-funcionario">Sobrenome</th>
+            <th class="th-list-funcionario">Cpf</th>
+            <th class="th-list-funcionario">Cargo</th>
         </tr>
-    </thead>
-    <tbody>
-        <tr th:each="funcionario : ${funcionarios}">
-            <td th:text="${funcionario.id_funcionario}"></td>
-            <td th:text="${funcionario.nome}"></td>
-            <td th:text="${funcionario.sobrenome}"></td>
-            <td th:text="${funcionario.cpf}"></td>
-            <td th:text="${funcionario.cargo.nome}"></td>
+        </thead>
+        <tbody>
+        <tr class="tr-list-funcionario" th:each="funcionario : ${funcionarios}">
+            <td class="td-list-funcionario" th:text="${funcionario.id_funcionario}"></td>
+            <td class="td-list-funcionario" th:text="${funcionario.nome}"></td>
+            <td class="td-list-funcionario" th:text="${funcionario.sobrenome}"></td>
+            <td class="td-list-funcionario" th:text="${funcionario.cpf}"></td>
+            <td class="td-list-funcionario" th:text="${funcionario.cargo.nome}"></td>
         </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>Adicionar Funcionario</title>
+</head>
+<body>
+    <div class="div-form-add-funcionario">
+        <form th:action="@{/funcionario/save}" th:object="${funcionario}" method="POST">
+
+            <div class="div-h1-add-funcionario">
+                <h1>Cadastrar Funcionário</h1>
+            </div>
+
+            <div class="div-input-add-funcionario">
+                <input autocomplete="off" class="input-add-funcionario" type="text" placeholder="Nome" th:field="*{nome}" required>
+            </div>
+
+            <div class="div-input-add-funcionario">
+                <input autocomplete="off" class="input-add-funcionario" type="text" placeholder="Sobrenome" th:field="*{sobrenome}" required>
+            </div>
+
+            <div class="div-input-add-funcionario">
+                <input autocomplete="off" class="input-add-funcionario" placeholder="Cpf" th:field="*{cpf}" required>
+            </div><br>
+
+            <div class="div-select-add-funcionario">
+                <select th:field="*{cargo}" class="select-cargo">
+                    <option th:each="cargo : ${cargos}" th:value="${cargo.id_cargo}" th:text="${cargo.nome}"></option>
+                </select>
+            </div><br>
+
+            <div class="div-button-add-funcionario">
+                <button type="submit" class="button-add-funcionario">CADASTRAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -8,21 +8,19 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="div-container">
+    <div class="div-form-login">
         <form th:action="@{/login}" method="POST">
-            <div class="titulo">
+            <div class="div-h1-login">
                 <h1>LOGAR</h1>
             </div>
-            <div class="div-form">
-                <!-- <label>Login</label><br> -->
-                <input autocomplete="off" class="input" name="username" placeholder="Login" required>
+            <div class="div-input-login">
+                <input autocomplete="off" class="input-login" name="username" placeholder="Login" required>
             </div>
-            <div class="div-form">
-                <!-- <label>Senha</label><br> -->
-                <input class="input" type="password" name="password" placeholder="Senha" required>
+            <div class="div-input-login">
+                <input class="input-login" type="password" name="password" placeholder="Senha" required>
             </div>
-            <div class="div-botao">
-                <button type="submit" class="button">ENTRAR</button>
+            <div class="div-button-login">
+                <button type="submit" class="button-login">ENTRAR</button>
             </div>
         </form>
     </div>
