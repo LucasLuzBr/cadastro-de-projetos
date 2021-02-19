@@ -123,3 +123,55 @@ padding: 8px;
 .tr-list-funcionario:nth-child(even) {
 background-color: #dddddd;
 }
+
+/* funcionario update */
+
+.div-h1-edit-funcionario {
+    padding-top: 1px;
+    text-align: center;
+    font-size: 15pt;
+    font-family: monospace;
+}
+
+.div-input-edit-funcionario {
+    text-align: center;
+}
+
+.div-select-edit-funcionario {
+    text-align: center;
+}
+
+.input-edit-funcionario {
+    border: none;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    height: 35px;
+    width: 300px;
+    outline: 0;
+    font-family: monospace;
+    margin: 15px;
+    text-align: center;
+}
+
+.div-button-edit-funcionario {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button-edit-funcionario {
+    background-color: #60c79c;
+    box-shadow: 0 6px 5px rgb(207, 207, 207);
+    height: 35px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    display: inline-block;
+    font-family: monospace;
+}
+.button-edit-funcionario:hover {background-color: #60c79c}
+
+.button-edit-funcionario:active {
+  background-color: #60c79c;
+  box-shadow: 0 1px 1px rgb(207, 207, 207);
+  transform: translateY(4px);
+}
