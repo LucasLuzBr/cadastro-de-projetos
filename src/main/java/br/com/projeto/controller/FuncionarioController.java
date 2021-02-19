@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @Controller
 public class FuncionarioController {
@@ -42,5 +44,13 @@ public class FuncionarioController {
         funcionarioRepository.save(funcionario);
 
         return "redirect:/funcionario/list";
+    }
+
+    @GetMapping("/funcionario/edit/{id}")
+    public String editFuncionario(@PathVariable Long id, Model model) {
+
+        model.addAttribute("funcionario", funcionarioRepository.findById(id));
+        model.addAttribute("cargos", cargoRepository.findAll());
+        return "/funcionario/edit";
     }
 }
