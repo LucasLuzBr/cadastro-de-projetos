@@ -1,6 +1,5 @@
 package br.com.projeto.controller;
 
-import br.com.projeto.model.Cargo;
 import br.com.projeto.model.Funcionario;
 import br.com.projeto.repository.CargoRepository;
 import br.com.projeto.repository.FuncionarioRepository;
@@ -10,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 
 @Controller
 public class FuncionarioController {
