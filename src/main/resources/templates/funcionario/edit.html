@@ -31,14 +31,14 @@
                 <input autocomplete="off" class="input-edit-funcionario" placeholder="Cpf" th:field="${funcionario.cpf}" required>
             </div><br>
 
-            <div class="div-select-edit-funcionario">
+            <!-- <div class="div-select-edit-funcionario">
                 <select th:field="${funcionario.cargo}" class="select-cargo">
                     <option th:each="cargo : ${cargos}" th:value="${cargo.id_cargo}" th:text="${cargo.nome}"></option>
                 </select>
-            </div><br>
-
+            </div><br>            -->
+            
             <div class="div-button-edit-funcionario">
-                <button type="submit" class="button-edit-funcionario">CADASTRAR</button>
+                <button type="submit" class="button-edit-funcionario">Salvar</button>
             </div>
 
         </form>
